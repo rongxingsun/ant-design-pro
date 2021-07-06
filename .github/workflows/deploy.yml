@@ -18,10 +18,10 @@ jobs:
         run: yarn add umi-plugin-antd-theme umi-plugin-pro umi-plugin-setting-drawer
 
       - name: fetch-blocks
-        run: yarn run pro fetch-blocks --branch=v5
+        run: yarn run pro fetch-blocks
 
       - name: site
-        run: npm run site
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
